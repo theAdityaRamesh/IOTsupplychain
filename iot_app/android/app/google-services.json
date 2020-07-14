@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "294363553321",
+    "firebase_url": "https://supplychainiot-3daf3.firebaseio.com",
+    "project_id": "supplychainiot-3daf3",
+    "storage_bucket": "supplychainiot-3daf3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294363553321:android:4647c2cf23a0277b8b0638",
+        "android_client_info": {
+          "package_name": "com.supplychain.iot_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294363553321-l2c7fbllgptpp4l8ovtasolfkttbraoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE9-oR1-10ITCW_YfY7mNSlkBjm83JBvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294363553321-l2c7fbllgptpp4l8ovtasolfkttbraoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
