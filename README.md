@@ -2,7 +2,7 @@
   <img src="banner.png" style="width=100%;">
 
 
-# IOT enabled supply chain real time tracking
+# IOT enabled real time supply chain monitoring
 
 Supply chain mobile app for real time asset tracking written in 
   - Mobile App 
