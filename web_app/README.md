@@ -8,4 +8,4 @@ on basis of performance, price and quality are given. A ML model is trained to p
 scoring. This ends up saving money.
 
 
-<img src = "images/webapp.png" stlye="width:100%;">
+<img src = "images/web_app.png" stlye="width:100%;">
