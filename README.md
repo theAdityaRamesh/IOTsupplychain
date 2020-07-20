@@ -1,5 +1,5 @@
 
-  <img src="images./banner.png" style="width=100%;">
+  <img src="images/banner.png" style="width=100%;">
 
 
 # IOT enabled real time supply chain monitoring
