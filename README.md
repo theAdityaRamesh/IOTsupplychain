@@ -1,5 +1,5 @@
 
-  <img src="banner.png" style="width=100%;">
+  <img src="images./banner.png" style="width=100%;">
 
 
 # IOT enabled real time supply chain monitoring
@@ -13,7 +13,7 @@ Supply chain mobile app for real time asset tracking written in
     
 # System Model
 
-  <img src="model.png" style="width=100%;">
+  <img src="images/model.png" style="width=100%;">
 
 
     
