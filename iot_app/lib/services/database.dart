@@ -11,4 +11,10 @@ class DatabaseService {
         .document(uid)
         .setData({'designation': designation});
   }
+
+  Stream<QuerySnapshot> get designation {
+    return designationCollection.snapshots();
+  }
 }
+
+// desig stream
