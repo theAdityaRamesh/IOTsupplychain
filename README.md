@@ -9,7 +9,7 @@ Supply chain mobile app for real time asset tracking written in
     - Dart (Flutter)
     - Firestore cloud
   - Web App
-    - MERN Stack
+    - Flask
     
 # System Model
 
