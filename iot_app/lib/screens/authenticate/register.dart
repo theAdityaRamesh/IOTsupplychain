@@ -22,30 +22,21 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple[100],
-      appBar: AppBar(
-          backgroundColor: Colors.purple[400],
-          elevation: 0.0,
-          title: Text('Register In to 24goat'),
-          actions: <Widget>[
-            FlatButton.icon(
-                onPressed: () {
-                  widget.toggleView();
-                },
-                icon: Icon(Icons.person),
-                label: Text('Sign-IN'))
-          ]),
-      body: Container(
+      body: ListView (
+        children :[
+          Image(
+              image: AssetImage('assets/register.png')),
+          Container(
           padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 50.0),
           child: Form(
             key: _formKey,
             child: Column(
               children: <Widget>[
                 SizedBox(
-                  height: 10.0,
+                  height: 30.0,
                 ),
                 TextFormField(
-                    decoration: textInputDecoration.copyWith(hintText: 'email'),
+                    decoration: textInputDecoration.copyWith(hintText: 'Email'),
                     validator: (val) => val.isEmpty ? 'Enter an Email' : null,
                     onChanged: (val) {
                       setState(() => email = val);
@@ -55,7 +46,7 @@ class _RegisterState extends State<Register> {
                 ),
                 TextFormField(
                   decoration:
-                      textInputDecoration.copyWith(hintText: 'password'),
+                      textInputDecoration.copyWith(hintText: 'Password'),
                   validator: (val) =>
                       val.length < 6 ? 'Enter an password 6+ chars long' : null,
                   obscureText: true,
@@ -66,8 +57,11 @@ class _RegisterState extends State<Register> {
                 SizedBox(
                   height: 10.0,
                 ),
-                DropdownButton<String>(
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children :[DropdownButton<String>(
                   value: designation,
+
                   onChanged: (String newValue) {
                     setState(() {
                       designation = newValue;
@@ -81,11 +75,18 @@ class _RegisterState extends State<Register> {
                     );
                   }).toList(),
                 ),
-                RaisedButton(
-                  color: Colors.green[700],
+                ButtonTheme(
+                  minWidth: 100.0,
+                  height: 40.0,
+                  child: RaisedButton(
+                  color: Colors.teal,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(25.0),
+                      side: BorderSide(color: Colors.teal)
+                  ),
                   child: Text(
                     'Register',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white, fontSize: 16.0),
                   ),
                   onPressed: () async {
                     if (_formKey.currentState.validate()) {
@@ -97,17 +98,26 @@ class _RegisterState extends State<Register> {
                       }
                     }
                   },
-                ),
+                ),),
+                  ],),
                 SizedBox(
                   height: 12.0,
                 ),
+                FlatButton.icon(
+                    onPressed: () {
+                      widget.toggleView();
+                    },
+                    icon: Icon(Icons.person),
+                    label: Text('Login',
+                    style: TextStyle( fontSize: 17.0))),
                 Text(
                   error,
                   style: TextStyle(color: Colors.red, fontSize: 14.0),
                 )
               ],
             ),
-          )),
+          )),],
+    ),
     );
   }
 }

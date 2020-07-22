@@ -4,7 +4,7 @@ import 'package:iot_app/services/auth.dart';
 import 'package:provider/provider.dart';
 import 'models/user.dart';
 
-void main() {
+void main() {   
   runApp(MyApp());
 }
 
